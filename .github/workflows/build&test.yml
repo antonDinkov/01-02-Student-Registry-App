@@ -41,7 +41,7 @@ jobs:
     if: github.ref == 'refs/heads/main' || github.event.pull_request.base.ref == 'main'
 
     steps:
-    - name: Deploy to production Second Test
+    - name: Deploy to production Second Test Last test
       uses: johnbeynon/render-deploy-action@v0.0.8
       with:
         service-id: ${{ secrets.SERVICE_ID }}
